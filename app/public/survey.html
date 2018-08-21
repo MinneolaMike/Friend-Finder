@@ -10,18 +10,172 @@
     <title>Friend Finder</title>
 
     <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
 </head>
 
 <body>
+    <!--Start of the Main Container-->
+    <div class='container'>
+        <div class='card-panel blue lighten-3 col s12 center-align'>
+            <h4><strong>Survey Questions</strong></h4>
+            <div class='card-panel left-align white'>
+                <h5 class="center-align"><strong>Please answer the following questions about you:</strong></h5>
+                <br>
+                <!--Inputs and labels for the User Name and Photo-->
+                <label class='active' for="name">Name: (required)</label>
+                <input placeholder="Name" id="name" type="text" class="validate" required>
+                <label class='active' for="name">URL for photo of you: (required)</label>
+                <input placeholder="http://" id="photo" type="text" class="validate" required>
+                <!--Question 1-->
+                <h5><strong>Question 1</strong></h5>
+                <p>???</p>
+                <select data-placeholder="" class="browser-default" id="q1">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <hr>
+                <!--Question 2-->
+                <h5><strong>Question 2</strong></h5>
+                <p>???</p>
+                <select data-placeholder="" class="browser-default" id="q2">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <hr>
+                <!--Question 3-->
+                <h5><strong>Question 3</strong></h5>
+                <p>???</p>
+                <select data-placeholder="" class="browser-default" id="q3">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <hr>
+                <!--Question 4-->
+                <h5><strong>Question 4</strong></h5>
+                <p>???</p>
+                <select data-placeholder="" class="browser-default" id="q4">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <hr>
+                <!--Question 5-->
+                <h5><strong>Question 5</strong></h5>
+                <p>???</p>
+                <select data-placeholder="" class="browser-default" id="q5">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <hr>
+                <!--Question 6-->
+                <h5><strong>Question 6</strong></h5>
+                <p>???</p>
+                <select data-placeholder="" class="browser-default" id="q6">
+                    <option value="">Choose an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <hr>
+                <!--Question 7-->
+                <h5><strong>Question 7</strong></h5>
+                <p>???</p>
+                <select data-placeholder="" class="browser-default" id="q7">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <hr>
+                <!--Question 8-->
+                <h5><strong>Question 8</strong></h5>
+                <p>???</p>
+                <select data-placeholder="" class="browser-default" id="q8">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <hr>
+                <!--Question 9-->
+                <h5><strong>Question 9</strong></h5>
+                <p>???</p>
+                <select data-placeholder="" class="browser-default" id="q9">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <hr>
+                <!--Question 10-->
+                <h5><strong>Question 10</strong></h5>
+                <p>???</p>
+                <select data-placeholder="" class="browser-default" id="q10">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <!--Modal Trigger & Submit Button-->
+                <button type="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger blue-grey" id="submitBtn">Submit
+                    <i class="material-icons right">send</i></button>
+            </div>
+        </div>
+        <div class='col s4'>
+            <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/MinneolaMike/Friend-Finder' target='_blank'>GitHub
+                    Repo
+                </a></p>
+        </div>
 
-
+        <!-- Results Modal-->
+        <div id="modal1" class="modal">
+            <div class="modal-content center-align">
+                <h4>Here's Your New Friend:</h4>
+                <h5 id="matchName"></h5>
+                <img id="matchPic" src="" alt="No Image" width=2 50px>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+            </div>
+        </div>
+    </div>
 
     <!--JavaScript-->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="main.js"></script>
 </body>
 

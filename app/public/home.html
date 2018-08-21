@@ -10,18 +10,35 @@
     <title>Friend Finder</title>
 
     <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
 </head>
 
 <body>
-
-
+    <!--Start of the Main Container-->
+    <div class='container'>
+        <div class='card-panel blue lighten-3 col s12'>
+            <section class='center-align'>
+                <h1><i class="fas fa-users"></i> Friend Finder</h1>
+                <h4>Answer a few questions & meet your new best friend!!!</h4><br>
+                <a href='/survey' class="waves-effect waves-light btn blue-grey"><i class="material-icons left">comment</i>Take
+                    Survey
+                </a>
+            </section>
+        </div>
+        <!--Links for Friends API & Github Repo-->
+        <div class='col s4'>
+            <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/MinneolaMike/Friend-Finder' target='_blank'>GitHub
+                    Repo</a></p>
+        </div>
+    </div>
 
     <!--JavaScript-->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="main.js"></script>
 </body>
 
