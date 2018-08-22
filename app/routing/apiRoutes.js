@@ -46,3 +46,4 @@ module.exports = function (app) {
         friendList.push(req.body);
     });
 };
+
