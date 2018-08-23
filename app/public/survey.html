@@ -177,6 +177,79 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="main.js"></script>
+
+    <!--InLine JavaScript for form submission, validation of form inputs, & displaying the result modal and/or toast(validity)-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // On CLick Function for the submit button on the form
+            $("#submitBtn").on("click", function (event) {
+                event.preventDefault();
+                // Function to validate that all fields are filled out
+                function validateForm() {
+                    // true if everything filled out
+                    var valid = true;
+                    // function to check if text fields are empty & change valid to false
+                    $(".validate").each(function () {
+                        if ($(this).val() === "") {
+                            valid = false;
+                        }
+                    });
+                    // function to check if select is unchoosen & change valid to false
+                    $(".browser-default").each(function () {
+                        if ($(this).val() === "") {
+                            valid = false;
+                        }
+                    });
+                    // Return the value of valid (True/False)
+                    return valid;
+                }
+                // If all fields filled out
+                if (validateForm() == true) {
+                    // Create a newFriend using the same JSON object as firends api list
+                    var newFriend = {
+                        name: $("#name").val().trim(),
+                        profilePic: $("#photo").val().trim(),
+                        scores: [
+                            $("q1").val(),
+                            $("q2").val(),
+                            $("q3").val(),
+                            $("q4").val(),
+                            $("q5").val(),
+                            $("q6").val(),
+                            $("q7").val(),
+                            $("q8").val(),
+                            $("q9").val(),
+                            $("q10").val(),
+                        ]
+                    };
+                    $.post("/api/friends", newFriend,
+                        function (data) {
+
+                            // Clear the inputs
+                            $("#name").val("");
+                            $("#photo").val("");
+                            $("#q1").val("");
+                            $("#q2").val("");
+                            $("#q3").val("");
+                            $("#q4").val("");
+                            $("#q5").val("");
+                            $("#q6").val("");
+                            $("#q7").val("");
+                            $("#q8").val("");
+                            $("#q9").val("");
+                            $("#q10").val("");
+                        });
+                }
+                // If fields not filled out show toast
+                else {
+                    M.toast({ html: 'All fields required!!' })
+                }
+            });
+            module.exports = newFriend;
+        });
+    </script>
 </body>
 
 </html>
+
+// Show the results modal $(".modal").modal();

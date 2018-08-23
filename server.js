@@ -13,7 +13,7 @@ require("./app/routing/apiRoutes.js")(app);
 // require("./app/data/friends.js")(app);
 
 // Set-up Express to handle data parsing
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Allow the assets folder to be used for static content
