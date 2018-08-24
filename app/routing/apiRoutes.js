@@ -1,49 +1,43 @@
 // Require path dependency
 var path = require("path");
 
-// Variable that imports friendList from friends.js
-var friendList = require("../data/friends.js")
+// Variable that imports friendList from friend
+var friendList = require("../data/friends");
 
 module.exports = function (app) {
-    // GET route that displays all possible friends in JSON via the hyperlink
-    app.get('/api/friends', function (req, res) {
+    // GET route that gets the data in friends.js and brings it in JSON
+    app.get("/api/friends", function (req, res) {
         res.json(friendList);
-    });
-
-    // Post route that will compare the user to the friends API
-    app.post('/api/friends', function (req, res) {
-        
-        // Variables that will be used to match user to new friend
-        var userScores = req.body.scores;
-        var scoresArray = [];
-        var bestMatch = 0;
-        var scoresDifference = 0;
-
-        // For loop that runs over the friendsList
+        console.log(friendList);
+    })
+    // POST route for comparing the user against their new best friend
+    app.post("/api/friends", function (req, res) {
+        //Variable to house the user input called newFriend and push it to the friends list
+        var newFriend = req.body;
+        friendList.push(newFriend);
+        // Variable for the bestMatch
+        var bestMatch = {
+            diff: 999,
+            friend: {}
+        }
+        // For loop to run over the friends list and seperate them
         for (var i = 0; i < friendList.length; i++) {
-            // For loop that runs over the user
-            for (var j = 0; j < userScores.length; j++) {
-                // Calculates the difference between the user and the friends in the friendList
-                scoresDifference += (Math.abs(parseInt(friendList[i].scores[j]) - parseInt(userScores[j])));
+            var totalDifference = 0;
+            // For link to furtur break it down into the scores
+            for (var j = 0; j < friendList[i].scores.length; j++) {
+                // Math that take the friend list scores and subtract theuser scores from it and then re-assigns it
+                var difference = Math.abs(parseInt(friendList[i].scores[j]) - parseInt(req.body.scores[j]));
+                totalDifference += difference;
             }
-            // pushes the scoresDifference into the scoresArray
-            scoresArray.push(scoresDifference);
+            // compares the user against the friends list and selects the best match friend based on the scores
+            if (totalDifference < bestMatch.diff) {
+                bestMatch.diff = totalDifference;
+                bestMatch.friend = friendList[i];
+            }
         }
+        // 
+        res.json(bestMatch);
         
-        // For loop that runs over the scoresArray which now houses the scoresDifference
-        for (var i = 0; i < scoresArray.length; i++) {
-            // if the scoresArray is less than or equal to the scores of a friend, bestMatch becomes the index of the new friend
-            if (scoresArray[i] <= scoresArray[bestMatch]) {
-                bestMatch = i;
-            }
-        }
-
-        // Returns the newFriend
-        var newFriend = friendList[bestMatch];
-        res.json(newFriend);
-
-        // Adds user to the friendList
-        friendList.push(req.body);
     });
-};
-
+    
+}

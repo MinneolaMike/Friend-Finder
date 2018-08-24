@@ -11,9 +11,8 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    
 </head>
 
 <body>
@@ -25,133 +24,136 @@
                 <h5 class="center-align"><strong>Please answer the following questions about you:</strong></h5>
                 <br>
                 <!--Inputs and labels for the User Name and Photo-->
-                <label class='active' for="name">Name: (required)</label>
-                <input placeholder="Name" id="name" type="text" class="validate" required>
-                <label class='active' for="name">URL for photo of you: (required)</label>
-                <input placeholder="http://" id="photo" type="text" class="validate" required>
-                <!--Question 1-->
-                <h5><strong>Question 1</strong></h5>
-                <h6>Are you an animal lover?</h6>
-                <select data-placeholder="" class="browser-default" id="q1">
-                    <option value="">Choose an option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-                <hr>
-                <!--Question 2-->
-                <h5><strong>Question 2</strong></h5>
-                <h6>Do you enjoy indoor activities over outdoor activities?</h6>
-                <select data-placeholder="" class="browser-default" id="q2">
-                    <option value="">Choose an option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-                <hr>
-                <!--Question 3-->
-                <h5><strong>Question 3</strong></h5>
-                <h6>Are you an adventurous eater?</h6>
-                <select data-placeholder="" class="browser-default" id="q3">
-                    <option value="">Choose an option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-                <hr>
-                <!--Question 4-->
-                <h5><strong>Question 4</strong></h5>
-                <h6>I have strong political views and like to talk about them?</h6>
-                <select data-placeholder="" class="browser-default" id="q4">
-                    <option value="">Choose an option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-                <hr>
-                <!--Question 5-->
-                <h5><strong>Question 5</strong></h5>
-                <h6>Do you like playing video games?</h6>
-                <select data-placeholder="" class="browser-default" id="q5">
-                    <option value="">Choose an option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-                <hr>
-                <!--Question 6-->
-                <h5><strong>Question 6</strong></h5>
-                <h6>Do you enjoy playing sports?</h6>
-                <select data-placeholder="" class="browser-default" id="q6">
-                    <option value="">Choose an Option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-                <hr>
-                <!--Question 7-->
-                <h5><strong>Question 7</strong></h5>
-                <h6>Excercise is something that is important to me?</h6>
-                <select data-placeholder="" class="browser-default" id="q7">
-                    <option value="">Choose an option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-                <hr>
-                <!--Question 8-->
-                <h5><strong>Question 8</strong></h5>
-                <h6>Religion is important to me and should be for my friends as well.</h6>
-                <select data-placeholder="" class="browser-default" id="q8">
-                    <option value="">Choose an option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-                <hr>
-                <!--Question 9-->
-                <h5><strong>Question 9</strong></h5>
-                <h6>Do you like taking trips with friends out of town?</h6>
-                <select data-placeholder="" class="browser-default" id="q9">
-                    <option value="">Choose an option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-                <hr>
-                <!--Question 10-->
-                <h5><strong>Question 10</strong></h5>
-                <h6>I perfer a quiet night in with friends over going out?</h6>
-                <select data-placeholder="" class="browser-default" id="q10">
-                    <option value="">Choose an option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-                <br>
-                <!--Modal Trigger & Submit Button-->
-                <button type="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger blue-grey" id="submitBtn">Submit
-                    <i class="material-icons right">send</i></button>
+                <form>
+                    <label class='active' for="name">Name: (required)</label>
+                    <input placeholder="Name" id="name" type="text" class="validate" required>
+                    <label class='active' for="name">URL for photo of you: (required)</label>
+                    <input placeholder="http://" id="photo" type="text" class="validate" required>
+
+                    <!--Question 1-->
+                    <h5><strong>Question 1</strong></h5>
+                    <h6>Are you an animal lover?</h6>
+                    <select class="browser-default" id="quest1">
+                        <option>Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <hr>
+                    <!--Question 2-->
+                    <h5><strong>Question 2</strong></h5>
+                    <h6>Do you enjoy indoor activities over outdoor activities?</h6>
+                    <select class="browser-default" id="quest2">
+                        <option>Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <hr>
+                    <!--Question 3-->
+                    <h5><strong>Question 3</strong></h5>
+                    <h6>Are you an adventurous eater?</h6>
+                    <select class="browser-default" id="quest3">
+                        <option>Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <hr>
+                    <!--Question 4-->
+                    <h5><strong>Question 4</strong></h5>
+                    <h6>I have strong political views and like to talk about them?</h6>
+                    <select class="browser-default" id="quest4">
+                        <option>Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <hr>
+                    <!--Question 5-->
+                    <h5><strong>Question 5</strong></h5>
+                    <h6>Do you like playing video games?</h6>
+                    <select class="browser-default" id="quest5">
+                        <option>Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <hr>
+                    <!--Question 6-->
+                    <h5><strong>Question 6</strong></h5>
+                    <h6>Do you enjoy playing sports?</h6>
+                    <select class="browser-default" id="quest6">
+                        <option value="">Choose an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <hr>
+                    <!--Question 7-->
+                    <h5><strong>Question 7</strong></h5>
+                    <h6>Excercise is something that is important to me?</h6>
+                    <select class="browser-default" id="quest7">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <hr>
+                    <!--Question 8-->
+                    <h5><strong>Question 8</strong></h5>
+                    <h6>Religion is important to me and should be for my friends as well.</h6>
+                    <select class="browser-default" id="quest8">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <hr>
+                    <!--Question 9-->
+                    <h5><strong>Question 9</strong></h5>
+                    <h6>Do you like taking trips with friends out of town?</h6>
+                    <select class="browser-default" id="quest9">
+                        <option>Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <hr>
+                    <!--Question 10-->
+                    <h5><strong>Question 10</strong></h5>
+                    <h6>I perfer a quiet night in with friends over going out?</h6>
+                    <select class="browser-default" id="quest10">
+                        <option>Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <!--Modal Trigger & Submit Button-->
+                    <button type="button" class="waves-effect waves-light btn blue-grey" id="submitBtn">Submit
+                        <i class="material-icons right">send</i></button>
+                </form>
             </div>
         </div>
         <div class='col s4'>
@@ -168,88 +170,55 @@
                 <img id="matchPic" src="" alt="No Image" width=2 50px>
             </div>
             <div class="modal-footer">
-                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" id="doneBtn">Done</a>
             </div>
         </div>
     </div>
 
     <!--JavaScript-->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script src="main.js"></script>
 
-    <!--InLine JavaScript for form submission, validation of form inputs, & displaying the result modal and/or toast(validity)-->
+    <!-- Inline JavaScript to handle the client side input -->
     <script type="text/javascript">
-        $(document).ready(function () {
-            // On CLick Function for the submit button on the form
-            $("#submitBtn").on("click", function (event) {
-                event.preventDefault();
-                // Function to validate that all fields are filled out
-                function validateForm() {
-                    // true if everything filled out
-                    var valid = true;
-                    // function to check if text fields are empty & change valid to false
-                    $(".validate").each(function () {
-                        if ($(this).val() === "") {
-                            valid = false;
-                        }
-                    });
-                    // function to check if select is unchoosen & change valid to false
-                    $(".browser-default").each(function () {
-                        if ($(this).val() === "") {
-                            valid = false;
-                        }
-                    });
-                    // Return the value of valid (True/False)
-                    return valid;
-                }
-                // If all fields filled out
-                if (validateForm() == true) {
-                    // Create a newFriend using the same JSON object as firends api list
-                    var newFriend = {
-                        name: $("#name").val().trim(),
-                        profilePic: $("#photo").val().trim(),
-                        scores: [
-                            $("q1").val(),
-                            $("q2").val(),
-                            $("q3").val(),
-                            $("q4").val(),
-                            $("q5").val(),
-                            $("q6").val(),
-                            $("q7").val(),
-                            $("q8").val(),
-                            $("q9").val(),
-                            $("q10").val(),
-                        ]
-                    };
-                    $.post("/api/friends", newFriend,
-                        function (data) {
+        // On click function for the submit button at the bottom of the survey page
+        $("#submitBtn").on("click", function (event) {
+            event.preventDefault();
+            // Variable for the user input
+            let userInput = {
+                name: $("#name").val().trim(),
+                profilePic: $("#photo").val().trim(),
+                scores: [
+                    $("#quest1").val(),
+                    $("#quest2").val(),
+                    $("#quest3").val(),
+                    $("#quest4").val(),
+                    $("#quest5").val(),
+                    $("#quest6").val(),
+                    $("#quest7").val(),
+                    $("#quest8").val(),
+                    $("#quest9").val(),
+                    $("#quest10").val(),
+                ]
+            }
+            console.log(userInput);
+            
+            // Post to add userInput to /api/ftiends
+            $.post("/api/friends", userInput, function (data) {
+                console.log(data);
+                $("#matchName").html(data.name);
+                $("#matchPic").attr("src", data.profilePic);
 
-                            // Clear the inputs
-                            $("#name").val("");
-                            $("#photo").val("");
-                            $("#q1").val("");
-                            $("#q2").val("");
-                            $("#q3").val("");
-                            $("#q4").val("");
-                            $("#q5").val("");
-                            $("#q6").val("");
-                            $("#q7").val("");
-                            $("#q8").val("");
-                            $("#q9").val("");
-                            $("#q10").val("");
-                        });
-                }
-                // If fields not filled out show toast
-                else {
-                    M.toast({ html: 'All fields required!!' })
-                }
-            });
-            module.exports = newFriend;
+            })
+            // Toggle the results modal on
+            $("#modal1").modal();
         });
+        // When you click done button on the results modal clears the input fields by reloading the page
+        $("#doneBtn").on("click", function () {
+            location.reload();
+        })
     </script>
+
 </body>
 
 </html>
-
-// Show the results modal $(".modal").modal();
