@@ -206,7 +206,7 @@
             // Post to add userInput to /api/ftiends
             $.post("/api/friends", userInput, function (data) {
                 console.log(data);
-                $("#matchName").html(data.name);
+                $("#matchName").text(data.name);
                 $("#matchPic").attr("src", data.profilePic);
 
             })
